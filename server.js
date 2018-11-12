@@ -36,13 +36,14 @@ hbs.registerHelper('screamIt', (text) => {
 
 app.get('/portfolio', (req, res) => {
   res.render('portfolio.hbs', {
+    welcomeMessage: 'Welcome to the Portfolio page',
     pageTitle: 'Portfolio Page'
   });
 });
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
-    welcomeMessage: 'Welcome to the Portfolio page',
+    welcomeMessage: 'Welcome to the About page',
     pageTitle: 'About Page'
   });
 });
